@@ -1,0 +1,33 @@
+package com.gachon.janjan.domain.session.util
+
+object FirestorePaths {
+    const val SESSIONS = "sessions"
+    const val PARTICIPANTS = "participants"
+    const val GLASS_MAPPINGS = "glassMappings"
+    const val DETECTION_EVENTS = "detectionEvents"
+    const val CAMERA_MAPPINGS = "cameraMappings"
+    const val CV_FRAMES = "cvFrames"
+    const val CV_PAIR_STATES = "cvPairStates"
+    const val USERS = "users"
+    const val STORES = "stores"
+    const val TABLES = "tables"
+    const val TABLE_CAMERA_MAPPINGS = "tableCameraMappings"
+    const val CAMERA_DEVICES = "cameraDevices"
+    const val SETTLEMENTS = "settlements"
+    const val SETTLEMENT_ITEMS = "items"
+    const val ORDERS = "orders"
+    const val USER_APP_SETTINGS = "user_app_settings"
+    const val FRIENDSHIPS = "friendships"
+    const val DRINK_DAILY_STATS = "drinkDailyStats"
+    const val DRINK_STORE_DAILY_STATS = "drinkStoreDailyStats"
+    const val RANKING_CONTRIBUTIONS = "rankingContributions"
+
+    fun participants(sessionId: String) = "$SESSIONS/$sessionId/$PARTICIPANTS"
+    fun glassMappings(sessionId: String) = "$SESSIONS/$sessionId/$GLASS_MAPPINGS"
+    fun detectionEvents(sessionId: String) = "$SESSIONS/$sessionId/$DETECTION_EVENTS"
+    fun cameraMappings(sessionId: String) = "$SESSIONS/$sessionId/$CAMERA_MAPPINGS"
+    fun cvFrames(sessionId: String) = "$SESSIONS/$sessionId/$CV_FRAMES"
+    fun cvPairStates(sessionId: String) = "$SESSIONS/$sessionId/$CV_PAIR_STATES"
+    fun storeTables(storeId: String) = "$STORES/$storeId/$TABLES"
+    fun tableCameraMappings(storeId: String) = "$STORES/$storeId/$TABLE_CAMERA_MAPPINGS"
+}

@@ -1,0 +1,32 @@
+local.properties
+.DS_Store
+.gradle/
+.kotlin/
+build/
+*/build/
+captures/
+*.iml
+secrets/
+backups/
+.idea/
+__MACOSX/
+
+# Android build artifacts
+.externalNativeBuild/
+.cxx/
+*.apk
+*.apks
+*.aab
+
+# Node / Firebase Functions
+node_modules/
+functions/node_modules/
+functions/.runtimeconfig.json
+firebase-debug.log
+firebase-debug.*.log
+firestore-debug.log
+database-debug.log
+ui-debug.log
+
+# Local model export duplicates. The app keeps its runtime model under app/src/main/assets/.
+model_export/
